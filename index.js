@@ -120,7 +120,7 @@ const res = await fetch(URL_favourite);
              /*    btn.appendChild(btnText)*/
                 heartRead.onclick = ()=> deleteFavouriteMichi(michi.id); 
                 imagen.src=michi.image.url
-                heartRead.src="/assets/corazon_1.svg"
+                heartRead.src="./assets/corazon_1.svg"
                 article.appendChild(imagen)
                 article.appendChild(heartRead)
                /*  div.appendChild(article) */
