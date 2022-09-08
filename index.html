@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header><div>
+
+        <h1> Muchos Gatitos </h1>
+    </div>
+    </header>
+    <!-- Incio -->
+    
+    <section class="randomMichis" id="randomMichis">
+
+        <div class="Refresh-text">
+
+            <h2>Si te gusta algunos de estos gatos, puedes guardarlo y se reflejará en la parte inferior de la página o simplemente puedes recargar otros tres en el botón <span>
+                 <button type="button" onclick="myCat()">
+                         <span></span> 
+                         <span></span> 
+                         <span></span> 
+                         <span></span> 
+                         Refresh
+                    </button>
+            </span>
+            </h2>
+            
+            <span id=error></span>
+            
+           
+        </div>
+
+        <div class="michis-box">
+
+        
+         <article class="michis-box_article">
+
+                 <img class="michis-box_img" id="img1" alt="Michi bonito">
+         
+                <img  class="michis-box_img-heart" src="./assets/me-gusta_1.svg" alt="corazon de me gusta">
+
+                <img  id="btn1"  class="michis-box_img-heart  heart-opacity" src="./assets/corazon_1.svg" alt="corazon de me gusta">
+             
+         </article>
+            
+               
+          
+
+
+         <article class="michis-box_article">
+
+                  <img id="img2" class="michis-box_img" alt="Michi bonito">
+                  <img class="michis-box_img-heart" src="./assets/me-gusta_1.svg" alt="corazon de me gusta">
+                  <img  id="btn2"   class="michis-box_img-heart  heart-opacity" src="./assets/corazon_1.svg" alt="corazon de me gusta">
+           
+         </article>
+            
+          
+
+
+         <article class="michis-box_article">
+              <img id="img3" class="michis-box_img" alt="Michi bonito">
+              <img class="michis-box_img-heart" src="./assets/me-gusta_1.svg" alt="corazon de me gusta">
+              <img  id="btn3"   class="michis-box_img-heart  heart-opacity" src="./assets/corazon_1.svg" alt="corazon de me gusta">
+     
+         </article>
+    </div>
+    
+   <main>
+
+
+   
+
+</section>
+
+
+
+
+<div class="Favourites-cats">   
+
+
+
+
+<!-- subir fotos manualmente -->
+
+<section class="uploadingMichis" >
+
+    <h2>Aqui puedes agregar gatitos desde tu galería (Para que la foto pueda subirse tiene que haber un lindo gatito en la fotografia)</h2>
+
+<form id="uploadingForm">
+
+   
+    <div class="div-file">
+    <p class="text">Add file</p>
+   <input id="file" type="file" name="file" multiple > 
+</div>
+
+    
+</form>
+<button type="button" onclick="uploadMichiPhoto()">
+          <span></span> 
+         <span></span> 
+         <span></span> 
+         <span></span> 
+         Subir foto del lindo gatito
+        </button>
+
+
+</section>
+
+
+
+
+<!-- los michis en favoritos -->
+
+
+<section class="favouriteMichis" id="favouriteMichis"> 
+   <h2>
+    Tus gatos guardados
+   </h2>
+
+ 
+</section>
+
+
+ 
+  
+
+</div>
+  </main>
+</body>
+<script src="./index.js"></script>
+</html>
